@@ -1,0 +1,21 @@
+@import url(./sprite/sprite.css);
+.icon{
+  display: inline-block;
+}
+body{
+  background: #222;
+  color: #fff;
+  h1{
+    text-align: center;
+    border-radius: 17px;
+    background: greenyellow;
+    color: #333;
+  }
+}
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}

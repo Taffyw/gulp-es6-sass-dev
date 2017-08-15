@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="lib/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<!--可以传递json参数 模块html复用-->
+@@include('include/header.html',{
+    "title":"我是标题"
+})
+<h1>body</h1>
+<!--雪碧图标-->
+<i class="icon icon-touch_icon"></i>
+<i class="icon icon-woman_retro"></i>
+
+<img src="./images/bottom_bg.jpg" alt="">
+<!--引入底部公共文件-->
+@@include('include/footer.html')
+<script src="js/main.js"></script>
+</body>
+</html>
