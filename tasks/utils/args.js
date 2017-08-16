@@ -1,7 +1,7 @@
 /**
  * Created by wangtf on 2017/5/16.
  */
-import yargs from 'yargs';
+import yargs from 'yargs'
 
 const args = yargs
 
@@ -22,4 +22,4 @@ const args = yargs
     })
     .argv
 
-export default args;
+export default args

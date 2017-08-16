@@ -12,11 +12,7 @@ import named from 'vinyl-named'
 import rename from 'gulp-rename'
 import uglify from 'gulp-uglify'
 import plumber from 'gulp-plumber'
-import args from './utils/args'
-import sync from 'browser-sync'
-let reload = sync.reload
-import gulpif from 'gulp-if';
-import {log, colors} from 'gulp-util';
+import {log, colors} from 'gulp-util'
 
 gulp.task('scripts', () => {
     return gulp.src('src/js/main.js')
@@ -35,5 +31,4 @@ gulp.task('scripts', () => {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify({compress: {properties: false}, output: {'quote_keys': true}}))
         .pipe(gulp.dest('dist/js'))
-        .pipe(gulpif(args.watch, reload({stream: true})))
-});
+})

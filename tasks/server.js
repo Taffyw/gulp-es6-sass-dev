@@ -4,9 +4,17 @@
  * 监听src对应文件执行任务
  */
 import gulp from 'gulp'
-import args from './utils/args';
+import args from './utils/args'
 import sync from 'browser-sync'
-let reload = sync.reload;
+
+gulp.task('scripts-watch', ['scripts'], done => {
+    sync.reload()
+    done()
+});
+gulp.task('css-watch', ['css'], done => {
+    sync.reload()
+    done()
+});
 
 gulp.task('server', (cb) => {
     if (!args.watch) return cb()
@@ -17,10 +25,15 @@ gulp.task('server', (cb) => {
             baseDir: ['./dist']
         }
     });
+    gulp.watch("src/js/**/*.js", ['scripts-watch'])
+    gulp.watch('src/sass/**/*.scss', ['css-watch'])
     gulp.watch('src/**/*.html', ['html'])
     gulp.watch('src/images/**/*.*', ['image'])
-    gulp.watch('src/sass/**/*.scss', ['css'])
-    gulp.watch('src/js/**/*.js', ['scripts'])
     gulp.watch('src/images/sprite/**/*.*', ['sprite'])
     gulp.watch('src/lib/**/*.*', ['lib'])
-});
+    gulp.watch([
+        'src/**/*.html',
+        'src/images/**/*.*',
+        'src/lib/**/*.*'
+    ]).on('change', sync.reload)
+})
