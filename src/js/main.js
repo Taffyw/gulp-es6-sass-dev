@@ -16,3 +16,5 @@ let b = {
     age: 23,
     name: 'qq'
 }
+let m = new Main('我太过分1')
+m.sayName()
