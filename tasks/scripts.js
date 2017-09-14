@@ -22,11 +22,11 @@ gulp.task('scripts', () => {
             }
         }))
         .pipe(named())
-        .pipe(webpack(webpackConfig, null, (err, stats) => {
-            log(`Finished '${colors.cyan('default')}'`, stats.toString({
-                chunks: false
-            }))
-        }))
+        // .pipe(webpack(webpackConfig, null, (err, stats) => {
+        //     log(`Finished '${colors.cyan('default')}'`, stats.toString({
+        //         chunks: false
+        //     }))
+        // }))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify({compress: {properties: false}, output: {'quote_keys': true}}))
