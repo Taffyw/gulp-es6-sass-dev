@@ -1,0 +1,91 @@
+
+<!--可以传递json参数 模块html复用-->
+@@include('include/header.html',{
+    "title":"产品"
+})
+@@include('include/nav.html',{
+    "index":1
+})
+<script type="text/javascript" src="./lib/js/cloud-zoom.1.0.2.min.js"></script>
+<div id="mid_caption">
+    <div class="pages">
+        <div id="page-title">
+            <h2>产品栏目4</h2>
+            <div class="clear"></div>
+            <div id="bolded-line"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="content_wrapper">
+    <!-- start sidebar-left -->
+    <div id="sidebar-left">
+        <div class="left-sidebar-block">
+            <h3 class="dotted_line">栏目导航</h3>
+            <div class="tout news_categories">
+                <ul>
+
+
+
+                    <li><a href="../../pro/pro1/"><span>产品栏目1</span><span class="symbol">&gt;</span></a></li>
+
+
+                    <li><a href="../../pro/pro2/"><span>产品栏目2</span><span class="symbol">&gt;</span></a></li>
+
+
+                    <li><a href="../../pro/pro3/"><span>产品栏目3</span><span class="symbol">&gt;</span></a></li>
+
+
+                    <li class="prselected"><a href="../../pro/pro4/"><span>产品栏目4</span><span class="symbol">&gt;</span></a></li>
+
+
+                    <li><a href="../../pro/pro5/"><span>产品栏目5</span><span class="symbol">&gt;</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sweibo"><iframe width="230" height="85" class="share_self" frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=230&amp;height=85&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=0&amp;noborder=0&amp;isWeibo=0&amp;isFans=0&amp;uid=3774309970&amp;verifier=5dd3f091&amp;colors=d6f3f7,f8f8f8,666666,0082cb,ecfbfd&amp;dpc=1"></iframe></div>
+    </div>
+    <!-- END sidebar-left -->
+    <!-- start content -->
+    <div class="content" id="prowidth">
+        <div class="contents">
+            <!--zoom-section start-->
+            <div class="zoom-section">
+                <div class="zoom-small-image">
+                    <div id="wrap" style="top:0px;position:relative;"><a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0424/20140424121914247.jpg" class="cloud-zoom" id="zoom1" rel="adjustX:10, adjustY:-4" style="position: relative; display: block;"><img src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0424/20140424121914247.jpg" alt="产品标题" style="display: block;"></a><div class="mousetrap" style="z-index: 999; position: absolute; width: 360px; height: 250px; left: 0px; top: 0px; cursor: move; background-image: url(&quot;.&quot;);"></div></div></div>
+                <div class="content-info">
+                    <ul>
+                        <li id="contitle"><h1>产品标题</h1></li>
+                        <li>产品内容描述</li>
+                        <li class="qqonline"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=835854385&amp;site=qq&amp;menu=yes" class="button white">在线咨询</a> <a href="http://pxgrids.taobao.com/" class="button redbtn" target="_blank">马上购买</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--zoom-section end-->
+            <div class="breadcrumbs">
+                <ul>
+                    <li><span>产品介绍：</span></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="dotted_line"></div>
+            <div class="content-pro"><h1>h1样式</h1>
+                <h2>h2样式</h2>
+                <h3>h3样式</h3>
+                <h4>h4样式</h4>
+                <h5>h5样式</h5>
+                <h6>
+                    h6样式</h6>
+                <p>文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式<br>
+                    <br>
+                    文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式文字内容介绍和段落样式</p>
+            </div>
+
+        </div></div>
+    <!-- END content -->
+</div>
+
+<div class="bottom-block"><div class="wrapper"></div></div>
+<!--引入底部公共文件-->
+@@include('include/footer.html')

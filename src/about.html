@@ -1,0 +1,117 @@
+<!--可以传递json参数 模块html复用-->
+@@include('include/header.html',{
+"title":"关于"
+})
+@@include('include/nav.html',{
+"index":6
+})
+<style>
+    .a-item{
+        display: none;
+    }
+</style>
+<div id="mid_caption"><!-- start mid_caption -->
+    <div class="pages">
+        <!-- Page Title -->
+        <div id="page-title">
+            <h2>关于</h2>
+            <div class="clear"></div>
+            <div id="bolded-line"></div>
+        </div>
+        <!-- Page Title / End -->
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="content_wrapper"><!-- start content_wrapper-->
+    <!-- start sidebar-left -->
+    <div id="sidebar-left">
+        <div class="left-sidebar-block">
+            <h3 class="dotted_line">About 关于</h3>
+            <div class="tout news_categories">
+                <ul>
+                    <li><a href="javascript:void(0)"><span>关于我们</span><span class="symbol">&gt;</span></a></li>
+                    <li><a href="javascript:void(0)"><span>招聘信息</span><span class="symbol">&gt;</span></a></li>
+                    <li><a href="javascript:void(0)"><span>版权声明</span><span class="symbol">&gt;</span></a></li>
+                    <li><a href="javascript:void(0)"><span>联系方式</span><span class="symbol">&gt;</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sweibo">
+            <iframe width="230" height="85" class="share_self" frameborder="0" scrolling="no"
+                    src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=230&amp;height=85&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=0&amp;noborder=0&amp;isWeibo=0&amp;isFans=0&amp;uid=5304313300&amp;verifier=5dd3f091&amp;colors=d6f3f7,f8f8f8,666666,0082cb,ecfbfd&amp;dpc=1"></iframe>
+        </div>
+    </div>
+    <!-- END sidebar-left -->
+    <!-- start content -->
+    <div class="content" id="prowidth">
+        <div id="main_column_left" class="a-item">
+            <h3 class="dotted_line">关于我们</h3>
+            <img alt="" src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428122801764.png"
+                 style="width: 730px; height: 200px;">
+            <div class="divide20">&nbsp;</div>
+            <h4>起源</h4>
+            <p>
+                像素格缘于一张被放大到极致的图像，图像被放大后我们看到的不是原来的景象，而是一格一格的正方形“像素格”，正是这些像素格的组合，才构成了一张完美的图像。而我们，正是这大千世界图像中的一个像素格，在成千上万的格子中，追求完美而又放肆自由。因此，我们便以此为工作室命名。</p>
+            <div class="line">&nbsp;</div>
+            <h4>团队</h4>
+            <p>用最贴切的一句话来形容就是一群“疯子”的工作室，像素格的工匠们基本都是技术宅，有的喜欢堆代码，有的喜欢搞设计，有的喜欢研究用户体验，有的喜欢钻研新技术......
+                每个人所专攻的领域都不一样，正是因为这样，像素格完美的把这群人召集到了一起，开始做一件他们认为很伟大的事情。</p>
+        </div>
+        <div id="main_column_left" class="a-item">
+            <h3 class="dotted_line">招“疯子”</h3>
+            你是个“疯子”，有一技之长，狂热于自己的兴趣，且有流碧的作品，欢迎发简历至hr#pxgrids.com （#替换@），请附作品！
+        </div>
+        <div id="main_column_left" class="a-item">
+            <h3 class="dotted_line">版权信息</h3>
+            严格来讲，我们的作品已在版权局备案，但是，我们承诺过，[01]号作品免授权，且永久免费使用，免费升级，<strong>采用时，请保留版权信息</strong>，作品原创者保留著作权！
+        </div>
+        <div id="main_column_left" class="a-item">
+            <h3 class="dotted_line">联系我们</h3>
+            <div class="map">
+                <iframe frameborder="0" height="258" marginheight="0" marginwidth="0" scrolling="no" src="./map.html"
+                        width="735"></iframe>
+            </div>
+            <br>
+            <div>电 话 ：+86-010-110119112<br>
+                &nbsp;</div>
+            <div>传 真 ：+86-010-122119120<br>
+                &nbsp;</div>
+            <div>免费客服专线：400-123-456-789<br>
+                &nbsp;</div>
+            <div>地 址 ：新纪元宇宙省银河市天朝县拆迁村地沟油街道<br>
+                &nbsp;</div>
+        </div>
+    </div>
+</div>
+<div class="bk10"></div>
+<div class="bottom-block">
+    <div class="wrapper"></div>
+</div>
+<script>
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)return unescape(r[2]);
+        return null;
+    }
+    function add(index) {
+        $('.news_categories>ul>li').eq(index).addClass('prselected').siblings().removeClass('prselected')
+        $('.a-item').eq(index).fadeIn().siblings().hide()
+    }
+    $(function () {
+        var show = GetQueryString("show");
+        if (show) {
+            add(show)
+        }else {
+            add(0)
+        }
+        $('.news_categories>ul>li').click(function () {
+            var index = $(this).index();
+            add(index)
+        })
+    })
+
+</script>
+<!--start footer-->
+<!--引入底部公共文件-->
+@@include('include/footer.html')

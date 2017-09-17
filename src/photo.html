@@ -1,0 +1,382 @@
+<!--可以传递json参数 模块html复用-->
+@@include('include/header.html',{
+"title":"图片"
+})
+@@include('include/nav.html',{
+"index":3
+})
+<link href="./lib/css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./lib/js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="./lib/js/portfolio.js"></script>
+<script type="text/javascript" src="./lib/js/custom-libraries.js?ver=1.0"></script>
+<div id="mid_caption">
+    <div class="pages">
+        <div id="page-title">
+            <h2>图片栏目</h2>
+            <div class="clear"></div>
+            <div id="bolded-line"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="content_wrapper"><!-- start content_wrapper-->
+    <div id="content_fullwidth"><!-- start content_fullwidth-->
+        <div id="main_column_fullwidth"><!-- start main_column_fullwidth-->
+            <div class="clear"></div>
+            <!-- start breadcrumbs -->
+            <div class="breadcrumbs none">
+                <ul>
+                    <li><span>图 片 频 道 栏 目</span></li>
+                    <li>
+                        <div class="description">
+                            <div id="portfolio-filter">
+                                <ul>
+                                    <li><a href="#all" class="current">全部</a></li>
+
+
+                                    <li><a href="#pic1" class="">美女图片</a></li>
+
+
+                                    <li><a href="#pic2" class="">帅哥图片</a></li>
+
+
+                                    <li><a href="#pic3">汽车图片</a></li>
+                                </ul><!--END ul-->
+                            </div><!--END ul gallery-filter-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- [END] breadcrumbs -->
+            <div class="clear"></div>
+            <div id="line"></div>
+            <!-- BEGIN: portfolio filter -->
+            <div id="portfolio"> <!--start portfolio -->
+                <div class="clear"></div>
+                <!-- BEGIN: Portfolio -->
+                <div id="portfolio_box"><!--start portfolio_box-->
+                    <ul id="pxgridsimglist">
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012707141.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012707141.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012643390.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012643390.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012634102.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012634102.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012626711.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012626711.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012615843.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012615843.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012606313.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012606313.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012557984.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012557984.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic3" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012546767.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012546767.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">汽车酷照</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012350640.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012350640.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012339108.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012339108.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012327839.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012327839.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012316298.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012316298.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012307856.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012307856.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012255717.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012255717.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012247692.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012247692.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012235808.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012235808.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic2" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012222182.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012222182.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外帅哥</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012053865.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012053865.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012042132.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012042132.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012029762.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012029762.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428012007813.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428012007813.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428011949916.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428011949916.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="pxgridsimglist">
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428011936360.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428011936360.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                        <li class="pic1" style="display: list-item;">
+                            <div class="image">
+                                <a href="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/20140428011638161.jpg"
+                                   class="iframe" data-id="fancybox-portfolio"><img
+                                        src="http://www.pxgrids.com/works/01/v2.2/uploadfile/2014/0428/thumb_220_140_20140428011638161.jpg"
+                                        alt="#" style="opacity: 1;"></a>
+                            </div>
+                            <div class="project_info">
+                                <h2><a href="">国外美女</a></h2>
+                                <h3></h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--END portfolio_box-->
+                <div id="clear"></div>
+            </div><!--END portfolio -->
+        </div><!-- END main_column_fullwidth-->
+    </div><!-- END content_fullwidth-->
+</div>
+
+<div class="bottom-block">
+    <div class="wrapper"></div>
+</div>
+<!--引入底部公共文件-->
+@@include('include/footer.html')
